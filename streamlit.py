@@ -8,10 +8,8 @@ import create_model as cm
 st.title("Knee X-ray Report Generator")
 
 st.markdown("<small>by Yun Xin TEOH</small>",unsafe_allow_html=True)
-st.markdown("[<small>Github</small>](https://github.com/ashishthomaschempolil/Medical-Image-Captioning-on-Chest-X-rays)          [<small>Towards Data Science</small>](https://towardsdatascience.com/medical-image-captioning-on-chest-x-rays-a43561a6871d)",
-unsafe_allow_html=True)
+st.markdown("[<small>Github</small>](https://github.com/yteoh12/XrayBoneSeg), unsafe_allow_html=True)
 st.markdown("\nThis app will generate bone segmentation of an X-ray report.\nYou can upload one X-ray image from any body parts.")
-st.markdown("The 2nd X-ray is optional.")
 
 
 col1,col2 = st.beta_columns(2)
