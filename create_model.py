@@ -212,7 +212,10 @@ def create_model():
   model_save = model_filename
   model.load_weights(model_save)
 
-  return model,tokenizer
+  loaded_model = tf.keras.models.load_model("self_supervised_pretraining_model_random_initialization_weight.h5", custom_objects={'RandomColorAffine': RandomColorAffine})
+  loaded_model.summary()
+
+  return loaded_model
 
 
 def greedy_search_predict(image1,image2,model,tokenizer,input_size = (224,224)):
