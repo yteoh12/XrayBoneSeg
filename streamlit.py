@@ -1,9 +1,16 @@
+import streamlit as st
+import os
+import numpy as np
+import time
+from PIL import Image
+import create_model as cm
+
 st.title("Knee X-ray Report Generator")
 
-st.markdown("<small>by Ashish</small>",unsafe_allow_html=True)
+st.markdown("<small>by Yun Xin TEOH</small>",unsafe_allow_html=True)
 st.markdown("[<small>Github</small>](https://github.com/ashishthomaschempolil/Medical-Image-Captioning-on-Chest-X-rays)          [<small>Towards Data Science</small>](https://towardsdatascience.com/medical-image-captioning-on-chest-x-rays-a43561a6871d)",
 unsafe_allow_html=True)
-st.markdown("\nThis app will generate impression part of an X-ray report.\nYou can upload 2 X-rays that are front view and side view of chest of the same individual.")
+st.markdown("\nThis app will generate bone segmentation of an X-ray report.\nYou can upload one X-ray image from any body parts.")
 st.markdown("The 2nd X-ray is optional.")
 
 
