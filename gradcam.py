@@ -1,6 +1,7 @@
 import numpy as np
 import tensorflow as tf
-from tensorflow.keras.models import load_model, Model
+from tensorflow.keras.models import load_model
+from tensorflow.keras.models import Model
 from tensorflow.keras.preprocessing import image
 # from tensorflow.keras import Model
 
