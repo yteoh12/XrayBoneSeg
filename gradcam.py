@@ -75,7 +75,6 @@ def sigmoid(x, a, b, c):
     return c / (1 + np.exp(-a * (x-b)))
 
 def superimpose(img_bgr, cam, thresh, emphasize=False):
-    
     '''
     Superimposes a grad-cam heatmap onto an image for model interpretation and visualization.
     
